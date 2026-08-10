@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquaMind - Plataforma de Avaliação Inclusiva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade Superior -->
+    <header class="accessibility-bar">
+        <div class="logo">EquaMind 🧠</div>
+        <div class="controls">
+            <button id="btn-theme" class="control-btn">🌓 Alternar Tema</button>
+            <button id="btn-sound" class="control-btn">🔊 Som Regulador: Desligado</button>
+            <button id="btn-pause" class="pause-btn">🛑 PAUSA PARA AUTORREGULAÇÃO</button>
+        </div>
+    </header>
+
+    <!-- Área Principal do Exame -->
+    <main class="quiz-container">
+        <div class="quiz-header">
+            <span class="subject">Componente Curricular: Matemática Discreta</span>
+            <div class="progress-container">
+                <span id="progress-text">Questão 1 de 2</span>
+                <div class="progress-bar"><div id="progress-fill" style="width: 50%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Bloco de Questão Única para evitar Sobrecarga Visual -->
+        <section id="question-block" class="question-block">
+            <h2 id="question-text">Determine o valor lógico da proposição composta $$P \land (Q \lor \neg P)$$, sabendo que P é VERDADEIRO e Q é FALSO.</h2>
+            
+            <div class="options-container">
+                <button class="option-card" onclick="selectOption(this)">A) Verdadeiro (V)</button>
+                <button class="option-card" onclick="selectOption(this)">B) Falso (F)</button>
+                <button class="option-card" onclick="selectOption(this)">C) Inconclusivo devido à contradição</button>
+            </div>
+        </section>
+
+        <div class="quiz-footer">
+            <button id="btn-next" class="next-btn" onclick="nextQuestion()">Avançar Etapa ➔</button>
+        </div>
+    </main>
+
+    <!-- Modal de Emergência (Tela de Descanso/Regulação) -->
+    <div id="pause-modal" class="modal">
+        <div class="modal-content">
+            <h2>Tempo Congelado. Respire fundo. 🌿</h2>
+            <p>Sua avaliação foi pausada com segurança. Não se preocupe com o cronômetro, ele está parado.</p>
+            <div class="breathing-circle"></div>
+            <p class="instruction">Acompanhe o círculo: inspire quando ele expandir, expire quando encolher.</p>
+            <button id="btn-resume" class="resume-btn">Estou pronta para voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
