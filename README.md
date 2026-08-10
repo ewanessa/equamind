@@ -1,44 +1,56 @@
-# 🧠 EquaMind — Avaliação Inclusiva e Assistiva
+# 🧠 EquaMind — Avaliação Inclusiva e Tecnologia Assistiva
 
-O **EquaMind** é um protótipo funcional de aplicação web voltado à execução de avaliações lógicas e matemáticas, desenvolvido sob as diretrizes do **Desenho Universal para a Aprendizagem (DUA)**. 
-
-O projeto foi concebido para mitigar os componentes ansiogênicos de exames tradicionais em cursos de exatas, oferecendo suporte a estudantes neuroatípicos (TDAH, TEA, dislexia) e discentes vulneráveis a picos de estresse e crises somatoformes durante testagens.
+> **Protótipo funcional de aplicação web para avaliações lógicas e matemáticas sob as diretrizes do Desenho Universal para a Aprendizagem (DUA).**
 
 ---
 
-## 🛑 Funcionalidades de Acessibilidade
+## 👩‍💻 Autoria e Propriedade Intelectual
 
-* **Visualização Modular:** Apresentação de apenas uma questão por tela, reduzindo a sobrecarga cognitiva.
-* **Ajuste Sensorial:** Alternância simples de tema (modo claro e alto contraste/tema escuro).
-* **Renderização Matemática Limpa:** Integração com MathJax para visualização nítida de fórmulas de lógica e exatas.
-* **Mecanismo de Salvaguarda (Pausa para Autorregulação):** Botão de emergência que interrompe a avaliação, oculta enunciados complexos e exibe um modal dinâmico com guia visual de respiração.
+Projetado, codificado e documentado de forma individual por **Estefany Wanessa Tavares Soares** como requisito para a 2ª Verificação de Aprendizagem (2ª VA) na disciplina de **Educação Inclusiva** do curso de **Licenciatura em Computação** da **Universidade Federal Rural de Pernambuco (UFRPE)**.
+
+* **Repositório Oficial:** [https://github.com/ewanessa/equamind.git](https://github.com/ewanessa/equamind.git)
 
 ---
 
-## 📸 Demonstração do Protótipo
+## 📌 Sobre o Projeto
 
-### 1. Interface Padrão com Renderização Matemática
+O **EquaMind** nasce como uma resposta tecnológica e humana às barreiras impostas por formatos tradicionais de exames em cursos de exatas. O objetivo principal é mitigar os componentes ansiogênicos de avaliações acadêmicas, oferecendo suporte contínuo a estudantes neuroatípicos (TDAH, TEA, dislexia) e discentes vulneráveis a picos de estresse situacional agudo e crises somatoformes (CID 10 F44).
+
+---
+
+## 🛑 Funcionalidades de Acessibilidade e Assistência
+
+* **Visualização Modular:** Apresentação restrita a uma única questão por tela, evitando a sobrecarga cognitiva e visual.
+* **Ajuste Sensorial Interativo:** Alternância instantânea de paleta de cores para tema escuro (alto contraste/baixo estresse visual).
+* **Renderização Matemática de Alta Precisão:** Integração com MathJax para visualização nítida e limpa de fórmulas de lógica e exatas.
+* **Mecanismo de Salvaguarda (Pausa para Autorregulação):** Botão de emergência que paralisa a avaliação, limpa temporariamente enunciados complexos e exibe um modal dinâmico com guia de respiração mecânica para prevenção de crises.
+
+---
+
+## 📸 Demonstração da Interface
+
+### 1. Interface Padrão e Renderização de Fórmulas
 ![Interface Padrão](./assets/print1-interface.png)
 
-### 2. Controle Sensorial (Tema Escuro / Alto Contraste)
+### 2. Customização Sensorial (Tema Escuro Ativado)
 ![Tema Escuro](./assets/print2-tema-escuro.png)
 
-### 3. Modal de Pausa e Respiração Guiada
-![Mecanismo de Pausa](./assets/print3-pausa.png)
+### 3. Tela de Emergência e Respiração Guiada (Pausa de Autorregulação)
+![Modal de Pausa](./assets/print3-pausa.png)
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5:** Estruturação semântica e acessível.
-* **CSS3:** Estilização responsiva e gerenciamento de temas.
-* **JavaScript (ES6):** Controle de fluxo de telas, alternância de temas e modais.
+* **HTML5:** Estrutura semântica e acessível.
+* **CSS3:** Design responsivo, estilização e manipulação de temas visuais.
+* **JavaScript (ES6+):** Controle de fluxo, manipulação do DOM e lógica dos modais de emergência.
 * **MathJax v3:** Renderização dinâmica de notações matemáticas em LaTeX.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto Localmente
 
-1. Clone este repositório:
+1. Clone o repositório:
    ```bash
    git clone [https://github.com/ewanessa/equamind.git](https://github.com/ewanessa/equamind.git)
