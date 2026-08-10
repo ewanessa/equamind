@@ -8,7 +8,8 @@
 
 Projetado, codificado e documentado de forma individual por **Estefany Wanessa Tavares Soares** como requisito para a 2ª Verificação de Aprendizagem (2ª VA) na disciplina de **Educação Inclusiva** do curso de **Licenciatura em Computação** da **Universidade Federal Rural de Pernambuco (UFRPE)**.
 
-* **Repositório Oficial:** [https://github.com/ewanessa/equamind.git](https://github.com/ewanessa/equamind.git)
+* 🔗 **Repositório Oficial:** [https://github.com/ewanessa/equamind.git](https://github.com/ewanessa/equamind.git)
+* 📄 **Relatório Acadêmico Completo (PDF):** [Leia o artigo/trabalho em ABNT](./EquaMind_Educacao_Inclusiva_UFRPE.pdf)
 
 ---
 
@@ -49,8 +50,16 @@ O **EquaMind** nasce como uma resposta tecnológica e humana às barreiras impos
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/ewanessa/equamind.git](https://github.com/ewanessa/equamind.git)
+1. Baixe ou clone os arquivos deste repositório para o seu computador.
+2. Abra a pasta do projeto **equamind**.
+3. Dê dois cliques no arquivo **index.html** para abrir o sistema diretamente no seu navegador de preferência (Google Chrome, Microsoft Edge, Firefox, etc.).
+
+---
+
+## 📜 Licença e Direitos Autorais
+
+Copyright © 2026 **Estefany Wanessa Tavares Soares**
+
+Este projeto está licenciado sob a **Licença MIT**. O código é aberto para fins acadêmicos, consulta e visualização. É **estritamente proibida** a cópia integral ou parcial deste projeto sem a devida atribuição dos créditos, bem como a submissão deste código como de autoria de terceiros (plágio). Qualquer uso derivado deve, obrigatoriamente, citar a autora original.
