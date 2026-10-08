@@ -75,26 +75,42 @@ function selectOption(element) {
 // Fluxo de Transição Dinâmica de Questões (Simulação de Progresso Modular)
 // Fluxo de Transição Dinâmica de Questões (Simulação de Progresso Modular)
 let currentStep = 1;
+
+let currentStep = 1;
+
 function nextQuestion() {
-    if(currentStep === 1) {
-        document.getElementById('question-text').textContent = "Traduza para a linguagem simbólica: 'Se Estefany estuda computação, então ela desenvolve sistemas inclusivos.' Considerar os símbolos literais.";
-        options[0].textContent = "A) $$p \\lor q$$";
-        options[1].textContent = "B) $$p \\rightarrow q$$";
-        options[2].textContent = "C) $$\\\\neg p \\\\land q$$";
-        options[2].textContent = "C) \\( \\neg p \\land q \\)";
-        options.forEach(opt => opt.classList.remove('selected'));
-        
-        document.getElementById('progress-text').textContent = "Questão 2 de 2";
-        document.getElementById('progress-fill').style.width = "100%";
-        document.getElementById('btn-next').textContent = "Finalizar Avaliação Confortável ➔";
-        
-        // COMANDO ADICIONADO: Avisa ao MathJax para renderizar as novas fórmulas da Questão 2
-        if (typeof MathJax !== 'undefined') {
-            MathJax.typeset();
-        }
+    const questionText = document.getElementById('question-text');
+    const options = document.querySelectorAll('.option-card');
+    const progressText = document.getElementById('progress-text');
+    const progressFill = document.getElementById('progress-fill');
+    const btnNext = document.getElementById('btn-next');
+
+    if (currentStep === 1) {
+        questionText.textContent =
+            "Traduza para a linguagem simbólica: " +
+            "'Se Estefany estuda computação, então ela desenvolve sistemas inclusivos.'";
+
+        options[0].textContent = "A) \\(p \\lor q\\)";
+        options[1].textContent = "B) \\(p \\rightarrow q\\)";
+        options[2].textContent = "C) \\(\\neg p \\land q\\)";
+
+        options.forEach(option => {
+            option.classList.remove('selected');
+        });
+
+        progressText.textContent = "Questão 2 de 2";
+        progressFill.style.width = "100%";
+        btnNext.textContent = "Finalizar Avaliação ➔";
 
         currentStep = 2;
+
+        if (typeof MathJax !== 'undefined') {
+            MathJax.typesetPromise([questionText, ...options])
+                .catch(error => console.error(
+                    "Erro ao renderizar as fórmulas:", error
+                ));
+        }
     } else {
-        alert("Avaliação concluída com sucesso e estabilidade de saúde assegurada!");
+        alert("Avaliação concluída.");
     }
 }
